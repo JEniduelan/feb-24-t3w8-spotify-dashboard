@@ -47,8 +47,8 @@ export function SpotifyProfileProvider({children}){
 		// if authdata has an access token, start making fetch requests
 		if (userAuthData && userAuthData.access_token){
 			fetchProfileData(userAuthData.access_token).then(profileData => {
-                setProfileData(profileData);
-            })
+				setProfileData(profileData);
+			});
 		}
 
 		// whenever auth data changes, check it and maybe make fetch request
