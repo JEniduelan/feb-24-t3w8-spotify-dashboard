@@ -1,5 +1,6 @@
 import { useSpotifyProfileData } from "../contexts/SpotifyProfileProvider"
-// import "../styles/ProfileHeader.css";
+import "../styles/ProfileHeader.css";
+
 
 export function ProfileHeader(){
 

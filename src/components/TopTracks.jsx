@@ -1,5 +1,5 @@
 import { useSpotifyProfileData } from "../contexts/SpotifyProfileProvider";
-// import "../styles/TopTracks.css";
+import "../styles/TopTracks.css";
 
 export function TopTracks(){
 	let {topTracks} = useSpotifyProfileData();
