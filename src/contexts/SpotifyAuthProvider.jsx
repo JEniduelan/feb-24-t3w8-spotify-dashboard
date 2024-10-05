@@ -16,7 +16,7 @@ export function useSpotifyAuthContext(){
 
 // Client ID from app configured in Spotify developer dashboard
 // https://developer.spotify.com/dashboard
-const clientId = "14e4e57b7b2b4a93a859cf033350c84f";
+const clientId = "7795a22ff57d4d9c90f4650ea727d6af";
 
 export function SpotifyAuthProvider({children}){
 	// Code required for Spotify sign-in process, not usable in API requests
@@ -96,7 +96,7 @@ export function SpotifyAuthProvider({children}){
 		params.append("client_id", clientId);
 		params.append("response_type", "code");
 		params.append("redirect_uri", "http://localhost:5173/spotifycallback");
-		params.append("scope", "user-read-private user-read-email");
+		params.append("scope", "user-top-read user-read-private user-read-email");
 		params.append("code_challenge_method", "S256");
 		params.append("code_challenge", challenge);
 	
